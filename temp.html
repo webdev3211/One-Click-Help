@@ -1,0 +1,482 @@
+<div class="ProfilePage-editingOverlay">
+</div>
+
+
+<div class="global-nav" data-section-term="top_nav">
+    <div class="global-nav-inner">
+        <div class="container">
+
+            <h1 class="Icon Icon--bird bird-topbar-etched" style="display: inline-block; width: 24px; height: 21px;">
+                <span class="visuallyhidden">Twitter</span>
+            </h1>
+
+
+            <div role="navigation" style="display: inline-block;">
+                <ul class="nav js-global-actions" id="global-actions">
+                    <li id="global-nav-home" class="home active" data-global-action="home">
+                        <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/" data-component-context="home_nav" data-nav="home">
+                            <span class="Icon Icon--home Icon--large"></span>
+                            <span class="Icon Icon--homeFilled Icon--large u-textUserColor"></span>
+                            <span class="text" aria-hidden="true">Home</span>
+                            <span class="u-hiddenVisually a11y-inactive-page-text">Home</span>
+                            <span class="u-hiddenVisually a11y-active-page-text">Home, current page.</span>
+                            <span class="u-hiddenVisually hidden-new-items-text">New Tweets available.</span>
+                        </a>
+                    </li>
+                    <li class="moments js-moments-tab " data-global-action="moments">
+                        <a role="button" href="/i/moments" class="js-nav js-tooltip js-dynamic-tooltip" data-component-context="moments_nav" data-nav="moments"
+                            data-placement="bottom">
+                            <span class="Icon Icon--lightning Icon--large"></span>
+                            <span class="Icon Icon--lightningFilled Icon--large u-textUserColor"></span>
+                            <span class="text" aria-hidden="true">Moments</span>
+                            <span class="u-hiddenVisually a11y-inactive-page-text">Moments</span>
+                            <span class="u-hiddenVisually a11y-active-page-text">Moments, current page.</span>
+                        </a>
+                    </li>
+                    <li class="people notifications" data-global-action="connect">
+                        <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/i/notifications" data-component-context="connect_nav"
+                            data-nav="connect">
+                            <span class="Icon Icon--notifications Icon--large"></span>
+                            <span class="Icon Icon--notificationsFilled Icon--large u-textUserColor"></span>
+                            <span class="text" aria-hidden="true">Notifications</span>
+                            <span class="u-hiddenVisually a11y-inactive-page-text">Notifications</span>
+                            <span class="u-hiddenVisually a11y-active-page-text">Notifications, current page.</span>
+                            <span class="count">
+                                <span class="count-inner">0</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dm-nav">
+                        <a role="button" href="#" class="js-tooltip js-dynamic-tooltip global-dm-nav" data-placement="bottom">
+                            <span class="Icon Icon--dm Icon--large"></span>
+                            <span class="text">Messages</span>
+                            <span class="dm-new">
+                                <span class="count-inner"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pull-right nav-extras">
+                <div role="search">
+                    <form class="t1-form form-search js-search-form" action="/search" id="global-nav-search">
+                        <label class="visuallyhidden" for="search-query">Search query</label>
+                        <input class="search-input" type="text" id="search-query" placeholder="Search Twitter" name="q" autocomplete="off" spellcheck="false"
+                            aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-1">
+                        <span class="search-icon js-search-action">
+                            <button type="submit" class="Icon Icon--medium Icon--search nav-search" tabindex="-1">
+                                <span class="visuallyhidden">Search Twitter</span>
+                            </button>
+                        </span>
+                        <div role="listbox" class="dropdown-menu typeahead" id="typeahead-dropdown-1">
+                            <div aria-hidden="true" class="dropdown-caret">
+                                <div class="caret-outer"></div>
+                                <div class="caret-inner"></div>
+                            </div>
+                            <div role="presentation" class="dropdown-inner js-typeahead-results">
+                                <div role="presentation" class="typeahead-recent-searches block0">
+                                    <h3 id="recent-searches-heading" class="typeahead-category-title recent-searches-title">Recent searches</h3>
+                                    <button type="button" tabindex="-1" class="btn-link clear-recent-searches">Clear</button>
+                                    <ul role="presentation" class="typeahead-items recent-searches-list">
+
+                                        <li role="presentation" class="typeahead-item typeahead-recent-search-item">
+                                            <span class="Icon Icon--close" aria-hidden="true">
+                                                <span class="visuallyhidden">Remove</span>
+                                            </span>
+                                            <a role="option" aria-describedby="recent-searches-heading" class="js-nav" href="" data-search-query="" data-query-source=""
+                                                data-ds="recent_search" tabindex="-1"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div role="presentation" class="typeahead-saved-searches block2">
+                                    <h3 id="saved-searches-heading" class="typeahead-category-title saved-searches-title">Saved searches</h3>
+                                    <ul role="presentation" class="typeahead-items saved-searches-list">
+
+                                        <li role="presentation" class="typeahead-item typeahead-saved-search-item">
+                                            <span class="Icon Icon--close" aria-hidden="true">
+                                                <span class="visuallyhidden">Remove</span>
+                                            </span>
+                                            <a role="option" aria-describedby="saved-searches-heading" class="js-nav" href="" data-search-query="" data-query-source=""
+                                                data-ds="saved_search" tabindex="-1"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul role="presentation" class="typeahead-items typeahead-topics block3" style="display: none;">
+
+                                    <li role="presentation" class="typeahead-item typeahead-topic-item">
+                                        <a role="option" class="js-nav" href="" data-search-query="" data-query-source="typeahead_click" data-ds="topics" tabindex="-1"></a>
+                                    </li>
+                                </ul>
+                                <ul role="presentation" class="typeahead-items typeahead-accounts social-context js-typeahead-accounts block4"
+                                    style="display: none;">
+
+                                    <li role="presentation" data-user-id="" data-user-screenname="" data-remote="true" data-score="" class="typeahead-item typeahead-account-item js-selectable">
+
+                                        <a role="option" class="js-nav" data-query-source="typeahead_click" data-search-query="" data-ds="account">
+                                            <div class="js-selectable typeahead-in-conversation hidden">
+                                                <span class="Icon Icon--follower Icon--small"></span>
+                                                <span class="typeahead-in-conversation-text">In this conversation</span>
+                                            </div>
+                                            <img class="avatar size32" alt="">
+                                            <span class="typeahead-user-item-info account-group">
+                                                <span class="fullname"></span>
+                                                <span class="UserBadges">
+                                                    <span class="Icon Icon--verified js-verified hidden">
+                                                        <span class="u-hiddenVisually">Verified account</span>
+                                                    </span>
+                                                    <span class="Icon Icon--protected js-protected hidden">
+                                                        <span class="u-hiddenVisually">Protected Tweets</span>
+                                                    </span>
+                                                </span>
+                                                <span class="UserNameBreak">&nbsp;</span>
+                                                <span class="username u-dir" dir="ltr">@
+                                                    <b></b>
+                                                </span>
+                                            </span>
+                                            <span class="typeahead-social-context"></span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="js-selectable typeahead-accounts-shortcut js-shortcut">
+                                        <a role="option" class="js-nav" href="" data-search-query="" data-query-source="typeahead_click"
+                                            data-shortcut="true" data-ds="account_search"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <ul class="nav right-actions">
+                    <li class="me dropdown session js-session" data-global-action="t1me" id="user-dropdown">
+                        <a href="/settings" class="btn js-tooltip settings dropdown-toggle js-dropdown-toggle" id="user-dropdown-toggle" title="Profile and settings"
+                            data-placement="bottom" rel="noopener">
+                            <img class="Avatar Avatar--size32" src="https://pbs.twimg.com/profile_images/982203005855416320/bCkaHk5n_normal.jpg" alt="Profile and settings"
+                                data-user-id="963113574829907970">
+                        </a>
+                        <div class="DashUserDropdown dropdown-menu dropdown-menu--rightAlign is-forceRight is-autoCentered">
+                            <div class="dropdown-caret">
+                                <span class="caret-outer"></span>
+                                <span class="caret-inner"></span>
+                            </div>
+                            <ul>
+
+
+                                <li class="DashUserDropdown-userInfo" data-name="user-info">
+                                    <a href="/tushar_baheti28" class="DashUserDropdown-userInfoLink js-nav" data-nav="view_profile">
+                                        <b class="fullname">Tushar Maheshwari</b>
+                                        <span class="UserBadges"></span>
+                                        <p class="name">
+                                            <span class="username u-dir u-textTruncate" dir="ltr">@
+                                                <b>tushar_baheti28</b>
+                                            </span>
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-divider"></li>
+
+                                <li class="current-user" data-name="profile">
+                                    <a href="/tushar_baheti28" class="js-nav" data-nav="view_profile">
+                                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--me"></span>Profile
+                                    </a>
+                                </li>
+
+
+                                <li data-name="lists">
+                                    <a class="js-nav" href="/tushar_baheti28/lists" data-nav="all_lists">
+                                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--list"></span>Lists
+                                    </a>
+                                </li>
+
+
+                                <li data-name="moments">
+                                    <a class="js-nav" href="/tushar_baheti28/moments" data-nav="all_moments">
+                                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--lightning"></span>Moments
+                                    </a>
+                                </li>
+
+                                <li class="dropdown-divider"></li>
+
+
+
+
+                                <li>
+                                    <a href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads" target="_blank" data-nav="ads" rel="noopener">
+                                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--promotedStroked"></span>Twitter Ads
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="user-dropdown-analytics" href="https://analytics.twitter.com/" target="_blank" data-nav="user_dropdown_analytics"
+                                        rel="noopener">
+                                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--analytics"></span>Analytics
+                                    </a>
+                                </li>
+
+
+
+
+
+
+
+                                <li class="dropdown-divider"></li>
+
+
+                                <li>
+                                    <a href="/settings" data-nav="settings" class="js-nav" rel="noopener">Settings and privacy</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="//support.twitter.com" data-nav="help_center" rel="noopener">Help Center</a>
+                                </li>
+
+
+                                <li class="js-keyboard-shortcut-trigger" data-nav="shortcuts">
+                                    <button type="button" class="dropdown-link">Keyboard shortcuts</button>
+                                </li>
+
+
+                                <li id="signout-button" data-nav="logout">
+                                    <button type="button" class="dropdown-link js-logout-button">Log out
+                                        <span class="username u-dir u-textTruncate" dir="ltr">@
+                                            <b>tushar_baheti28</b>
+                                        </span>
+                                    </button>
+                                </li>
+
+
+                                <li class="dropdown-divider"></li>
+                                <li class="current-user nightmode-toggle" data-name="profile">
+                                    <a class="js-nav" data-nav="view_profile">
+                                        <span class="DashUserDropdown-linkIcon Icon Icon--medium js-nightmode-icon
+            Icon--lightBulbOn
+            ">
+                                        </span>
+                                        <span class="js-nightmode-label">Dark mode</span>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <button type="button" class="dropdown-link enable-rweb-link">Try the new Twitter</button>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li role="complementary" aria-labelledby="global-new-tweet-button" class="topbar-tweet-btn">
+                        <button id="global-new-tweet-button" class="js-global-new-tweet js-tooltip EdgeButton EdgeButton--primary js-dynamic-tooltip"
+                            data-placement="bottom" data-component-context="new_tweet_button">
+
+                            <span class="text">Tweet</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page-outer">
+    <div id="page-container" class="AppContent wrapper wrapper-home">
+
+        <div class="dashboard dashboard-left">
+            <div class="DashboardProfileCard  module">
+
+                <a class="DashboardProfileCard-bg u-bgUserColor u-block" href="/tushar_baheti28" tabindex="-1" aria-hidden="true" rel="noopener">
+                </a>
+
+                <div class="DashboardProfileCard-content">
+
+                    <a class="DashboardProfileCard-avatarLink u-inlineBlock" href="/tushar_baheti28" title="Tushar Maheshwari" tabindex="-1"
+                        aria-hidden="true" rel="noopener">
+                        <img class="DashboardProfileCard-avatarImage js-action-profile-avatar" src="https://pbs.twimg.com/profile_images/982203005855416320/bCkaHk5n_bigger.jpg"
+                            alt="">
+                    </a>
+
+                    <div class="DashboardProfileCard-userFields account-group">
+                        <div class="DashboardProfileCard-name u-textTruncate">
+                            <a class="u-textInheritColor js-nav" href="/tushar_baheti28" rel="noopener">Tushar Maheshwari</a>
+                            <span class="UserBadges"></span>
+                        </div>
+                        <span class="DashboardProfileCard-screenname u-inlineBlock u-dir" dir="ltr">
+                            <a class="DashboardProfileCard-screennameLink u-linkComplex u-linkClean js-nav" href="/tushar_baheti28" rel="noopener">
+                                <span class="username u-dir" dir="ltr">@
+                                    <b class="u-linkComplex-target">tushar_baheti28</b>
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="ProfileCardStats">
+                        <ul class="ProfileCardStats-statList Arrange Arrange--bottom Arrange--equal">
+                            <li class="ProfileCardStats-stat Arrange-sizeFit">
+                                <a class="ProfileCardStats-statLink u-textUserColor u-linkClean u-block js-nav js-tooltip" title="28 Tweets" href="/tushar_baheti28"
+                                    data-element-term="tweet_stats">
+                                    <span class="ProfileCardStats-statLabel u-block">Tweets</span>
+                                    <span class="ProfileCardStats-statValue" data-count="28" data-is-compact="false">28</span>
+                                </a>
+                            </li>
+                            <li class="ProfileCardStats-stat Arrange-sizeFit">
+                                <a class="ProfileCardStats-statLink u-textUserColor u-linkClean u-block js-nav js-tooltip" title="9 Following" href="/tushar_baheti28/following"
+                                    data-element-term="following_stats">
+                                    <span class="ProfileCardStats-statLabel u-block">Following</span>
+                                    <span class="ProfileCardStats-statValue" data-count="9" data-is-compact="false">9</span>
+                                </a>
+                            </li>
+                            <li class="ProfileCardStats-stat Arrange-sizeFit">
+                                <a class="ProfileCardStats-statLink u-textUserColor u-linkClean u-block js-nav js-tooltip" title="1 Follower" href="/tushar_baheti28/followers"
+                                    data-element-term="follower_stats">
+                                    <span class="ProfileCardStats-statLabel u-block">Followers</span>
+                                    <span class="ProfileCardStats-statValue" data-count="1" data-is-compact="false">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div id="dashboard-profile-prompt"></div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="DelightOptInModule module roaming-module u-hidden">
+                <button type="button" class="DelightOptInModule-dismiss">
+                    <span class="Icon Icon--close">
+                        <span class="u-hiddenVisually">Close</span>
+                    </span>
+                </button>
+                <img alt="" src="https://abs.twimg.com/a/1562095433/img/delight/delight_prompt_2.png" class="DelightOptInModule-image">
+                <div class="DelightOptInModule-title">Sneak a peek at the new Twitter</div>
+                <div class="DelightOptInModule-body">Bookmarks, dark mode, data saver, and more — see all the new features coming to the web.</div>
+                <button type="button" class="EdgeButton EdgeButton--primary DelightOptInModule-button">Take a look</button>
+            </div>
+
+
+            <div class="module wtf-module js-wtf-module roaming-module">
+                <div class="flex-module">
+                    <div class="flex-module-header">
+                        <h3>Who to follow</h3>
+                        <small>· </small>
+                        <button type="button" class="btn-link js-refresh-suggestions">
+                            <small>Refresh</small>
+                        </button>
+                        <small class="view-all">·
+                            <a class="js-view-all-link js-nav" href="/who_to_follow/suggestions" data-element-term="view_all_link">View all</a>
+                        </small>
+                    </div>
+
+                    <div class="js-recommended-followers dashboard-user-recommendations flex-module-inner" data-section-id="wtf">
+                    </div>
+                </div>
+                <div class="flex-module import-prompt">
+                    <div class="cta u-cf js-launch-service" data-service="gmail" data-url="/invitations/oauth_launch?service=gmail" data-popup="true"
+                        data-width="880" data-height="550">
+                        <span class="service u-sizeFit">
+                            <span class="icon service-gmail"></span>
+                        </span>
+                        <p class="u-sizeFit">
+                            <strong>Find people you know</strong>
+                            <span>Import your contacts from Gmail</span>
+                        </p>
+                    </div>
+                    <p class="flex-module-inner">
+                        <button type="button" class="btn-link js-connect-other">Connect other address books</button>
+                    </p>
+                    <div class="other-services hidden">
+                        <span class="service js-launch-service" data-service="msn2" data-url="/invitations/oauth_launch?service=msn2" data-popup="true"
+                            data-width="512" data-height="512">
+                            <span class="icon service-msn2"></span>
+                            <div>Outlook</div>
+                        </span>
+                        <p>
+                            <span>
+                                Choosing an option above will open a window for you to log in and securely import your contacts to Twitter. We'll also use
+                                this information to make follow suggestions. You can remove this privilege at any time.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="LiveVideoHomePageModuleContainer roaming-module">
+            </div>
+
+
+            <div class="module Trends trends hidden">
+                <div class="trends-inner">
+                    <div class="flex-module trends-container ">
+                        <div class="flex-module-header">
+
+                            <h3>
+                                <span class="trend-location js-trend-location">false</span>
+                            </h3>
+                        </div>
+                        <div class="flex-module-inner">
+                            <ul class="trend-items js-trends">
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="Footer module roaming-module">
+                <div class="flex-module">
+                    <div class="flex-module-inner js-items-container">
+                        <ul class="u-cf">
+                            <li class="Footer-item Footer-copyright copyright">© 2019 Twitter</li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="/about" rel="noopener">About</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="//support.twitter.com" rel="noopener">Help Center</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="/tos" rel="noopener">Terms</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="/privacy" rel="noopener">Privacy policy</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="//support.twitter.com/articles/20170514" rel="noopener">Cookies</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="//business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html"
+                                    rel="noopener">Ads info</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="//about.twitter.com/press/brand-assets" rel="noopener">Brand</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="https://blog.twitter.com" rel="noopener">Blog</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="http://status.twitter.com" rel="noopener">Status</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="https://about.twitter.com/products" rel="noopener">Apps</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-link" href="https://about.twitter.com/careers" rel="noopener">Jobs</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a clas
