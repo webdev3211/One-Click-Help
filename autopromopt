@@ -1,0 +1,15 @@
+
+While you can't programmatically click the permission button, CasperJS/SlimerJS will let you use a custom profile for the automated Firefox instance you're using in your tests. At least in the case of the WebRTC/getUserMedia permission prompts, Firefox lets you disable them in a profile's settings.
+
+Here's what you do. In your shell, use SlimerJS to create a new profile:
+
+slimerjs --createprofile nameOfYourNewProfileGoesHere
+Your new profile has been created in your Firefox profiles directory. To locate the directory you can either search for the profile name you just created, or go to Firefox and Help Menu > Troubleshooting Information. Next to 'Profile Folder' click 'Show in Finder' (or equivalent for your platform).
+
+Your profile is a directory with a name like asfd1234.nameOfYourNewProfileGoesHere, inside that dir edit the prefs.js file and add this line:
+
+user_pref("media.navigator.permission.disabled", true);
+Now when you run your CasperJS scripts (or SlimerJS directly, I suppose -- I only tested this through Casper), you just need to specify the profile. With CasperJS:
+
+casperjs test --engine=slimerjs -P nameOfYourNewProfileGoesHere nameOfYourTestFile.js
+It's almost too easy! ;)
