@@ -12,6 +12,6 @@
     "casperjs": "^1.1.4",
     "node-tesseract": "^0.2.7",
     "phantomjs": "^2.1.7",
-    "tesseract.js": "^1.0.14"
+    "tesseract.js": "^4.0.4"
   }
 }
